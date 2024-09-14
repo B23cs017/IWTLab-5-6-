@@ -4,8 +4,8 @@ body, h1, span, div {
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color:  #c5c1c1;
+    font-family:'Courier New', Courier, monospace;
+    background-color:cadetblue;
     color: #333;
     padding: 20px;
    
@@ -19,7 +19,7 @@ h1 {
 }
 
 .question {
-    background: #e1dfdf;
+    background: #13a7c2;
     border: 1px solid #ddd;
     border-radius: 5px;
     padding: 15px;
@@ -67,7 +67,7 @@ input[type="radio"] {
 }
 
 .heading{
-    background: #e1dfdf;
+    background: #73ca3a;
     border: 1px solid #ddd;
     border-radius: 5px;
     padding: 15px;
@@ -95,7 +95,7 @@ input[type="radio"] {
     border-radius:5px ;
     border: solid rgb(87, 82, 82);
     font-size: 20px;
-    font-family: "Times New Roman", Times, serif;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 button:hover {
     transform: scale(1.05);
