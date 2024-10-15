@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="quiz.css">
+  <title>Question Paper</title>
+</head>
+<body>
+  <div class="heading">
+    <h1>Check your IQ</h1>
+  </div>
+  <!-- q1 -->
+  <form id="quizForm">
+    <div class="question">
+      <span class="question-number">1.</span>
+      <span class="question-text">The word, "mineral," can be spelled using only the letters found in the word, "parliament."</span>
+      <div class="options">
+        <div class="option">
+          <input type="radio" id="q1option1" name="q1" value="true">
+          <label for="q1option1">True</label>
+        </div>
+        <div class="option">
+          <input type="radio" id="q1option2" name="q1" value="false">
+          <label for="q1option2">False</label>
+        </div>
+      </div>
+    </div>
+<!-- q2 -->
+    <div class="question">
+      <span class="question-number">2.</span>
+      <span class="question-text">This sequence of four words, "triangle, glove, clock, bicycle," corresponds to this sequence of numbers "3, 5, 12, 2."</span>
+      <div class="options">
+        <div class="option">
+          <input type="radio" id="q2option1" name="q2" value="true">
+          <label for="q2option1">True</label>
+        </div>
+        <div class="option">
+          <input type="radio" id="q2option2" name="q2" value="false">
+          <label for="q2option2">False</label>
+        </div>
+      </div>
+    </div>
+   <!-- q3 -->
+    <div class="question">
+        <span class="question-number">3.</span>
+        <span class="question-text">27 minutes before 7 o'clock is 33 minutes past 5 o'clock.</span>
+        <div class="options">
+          <div class="option">
+            <input type="radio" id="q3option1" name="q3" value="true">
+            <label for="q3option1">True</label>
+          </div>
+          <div class="option">
+            <input type="radio" id="q3option2" name="q3" value="false">
+            <label for="q3option2">False</label>
+          </div>
+        </div>
+      </div>
+<!-- q4 -->
+      <div class="question">
+        <span class="question-number">2.</span>
+        <span class="question-text">The word "because" can be spelled by using the first letters of the words in the following sentence: Big Elephants Can Always Understand Small Elephants.</span>
+        <div class="options">
+          <div class="option">
+            <input type="radio" id="q4option1" name="q4" value="true">
+            <label for="q4option1">True</label>
+          </div>
+          <div class="option">
+            <input type="radio" id="q4option2" name="q4" value="false">
+            <label for="q4option2">False</label>
+          </div>
+        </div>
+      </div>
+<!-- q5 -->
+      <div class="question">
+        <span class="question-number">5.</span>
+        <span class="question-text">If written backwards, the number, "one thousand, one hundred twenty-five," would be written "five thousand, two hundred eleven."</span>
+        <div class="options">
+          <div class="option">
+            <input type="radio" id="q5option1" name="q5" value="true">
+            <label for="q5option1">True</label>
+          </div>
+          <div class="option">
+            <input type="radio" id="q5option2" name="q5" value="false">
+            <label for="q5option2">False</label>
+          </div>
+        </div>
+      </div>
+    
+
+    <div class="submit">
+      <button type="button" id="submit">Submit</button>
+    </div>
+  </form>
+
+  <script>
+    document.getElementById('submit').addEventListener('click', function() {
+      const answers = {
+        q1: 'false', 
+        q2: 'true',  
+        q3: 'false', 
+        q4: 'true', 
+        q5: 'true', 
+        
+      };
+
+      let score = 0;
+      const totalQuestions = Object.keys(answers).length;
+
+      for (let q in answers) {
+        const userAnswer = document.querySelector(`input[name="${q}"]:checked`);
+        if (userAnswer && userAnswer.value === answers[q]) {
+          score++;
+        }
+      }
+
+      alert(`You scored ${score} out of ${totalQuestions}`);
+    });
+  </script>
+</body>
+</html>
