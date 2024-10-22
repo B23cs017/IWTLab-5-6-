@@ -1,0 +1,55 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    text-align: center;
+    background: linear-gradient(to bottom, #33ccff, #ff99cc); 
+    color: white;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+input[type=submit], input[type=reset]{
+    width: 15%;
+    padding: 8px 12px;
+    margin: 5px 0;
+    box-sizing: border-box;
+   }
+   input[type=text], input[type=email], input[type=number]{
+    width: 20%;
+    padding: 6px 12px;
+    margin: 5px 0;
+    box-sizing: border-box;
+   }   
+ label{
+    margin-right: 100px;
+ }
+ .formlayout{
+     border: solid white 4px;
+     text-align: center;
+     width: 70%;
+     margin-left: 200px;
+ }
+ .box1{
+    display: inline;
+    padding: 10px;
+    position: relative;
+    left: 120px;
+ }
+ .box2{
+    display: inline;
+    padding: 10px;
+    position: relative;
+    left: 120px;
+ }
+ .box3{
+    display: inline;
+    padding: 10px;
+    position: relative;
+    left: 120px;
+ }
+ .course{
+    position: relative;
+    left: 50px;
+    right: 400px;
+ }
