@@ -1,0 +1,103 @@
+body, h1, span, div {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family:'Courier New', Courier, monospace;
+    background-color:cadetblue;
+    color: #333;
+    padding: 20px;
+   
+    
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.question {
+    background: #13a7c2;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.question-number {
+    font-weight: bold;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.question-text {
+    font-size: 16px;
+    margin-bottom: 10px;
+    display: block;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 25px;
+}
+
+.options {
+    margin-left: 20px;
+    
+}
+
+.option {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+   
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+   
+}
+
+label {
+    font-size: 14px;
+    font-size: 20px;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+.heading{
+    background: #73ca3a;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+    font-family: serif;
+    font-size: 30px;
+
+}
+.submit{
+    background: #e1dfdf;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: serif;
+    font-size: 30px;
+
+}
+#submit{
+    height: 30px;
+    width: 90px;
+    border-radius:5px ;
+    border: solid rgb(87, 82, 82);
+    font-size: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+button:hover {
+    transform: scale(1.05);
+    background-color: rgb(205, 184, 184);
+}

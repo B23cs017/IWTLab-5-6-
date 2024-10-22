@@ -1,0 +1,41 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+h2{
+    color: blueviolet;
+}
+body{
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    font-size: 20px;
+}
+a:hover{
+    color: rgb(27, 178, 60);
+}
+.img{
+    width: 290px;
+    display: inline-block;
+    margin-top: 15px;
+    margin-right: 20px;
+}
+#google{
+     background-image: url("google.png");
+     background-repeat: no-repeat;
+     background-size: contain;
+     height: 200px;
+}
+#amazon{
+     background-image: url("amz.png");
+     background-repeat: no-repeat;
+     background-size: contain;
+     height: 120px;
+}
+#facebook{
+     background-image: url("facebook.png");
+     background-repeat: no-repeat;
+     background-size: contain;
+     height: 140px;
+}
